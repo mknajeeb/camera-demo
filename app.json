@@ -1,8 +1,9 @@
 {
   "expo": {
-    "name": "rush-bag-app",
-    "slug": "rush-bag-app",
+    "name": "camera-demo",
+    "slug": "camera-demo",
     "version": "1.0.0",
+    "sdkVersion": "53.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -11,25 +12,26 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "sdkVersion": "53.0.0",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.mknajeeb786.rushbagapp",
+      "bundleIdentifier": "com.mknajeeb786.camera-demo",
       "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false,
-        "NSCameraUsageDescription":       "We use the camera to scan bag tags",
-        "NSPhotoLibraryUsageDescription": "We need to access photos for retakes or saving scans",
-        "NSPhotoLibraryAddUsageDescription": "We need to save scanned images if you choose to retake",
-        "NSMicrophoneUsageDescription":   "Audio is used to record voice notes (optional)"
+        "NSCameraUsageDescription": "We use your camera to scan barcodes and bag tags.",
+        "NSMicrophoneUsageDescription": "We use your microphone to record optional voice notes."
       }
     },
     "android": {
+      "package": "com.mknajeeb786.camera-demo",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true,
-      "package": "com.mknajeeb786.rushbagapp"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
