@@ -12,33 +12,29 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.mknajeeb786.camera-demo",
+      "supportsTablet": false,
+      "bundleIdentifier": "com.mknajeeb786.cameraDemo",
       "infoPlist": {
-        "NSCameraUsageDescription": "We use your camera to scan barcodes and bag tags.",
-        "NSMicrophoneUsageDescription": "We use your microphone to record optional voice notes."
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSCameraUsageDescription": "We use the camera to scan bag tags",
+        "NSMicrophoneUsageDescription": "Audio is used to record voice notes"
       }
     },
     "android": {
-      "package": "com.mknajeeb786.camera-demo",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.mknajeeb786.cameraDemo",
+      "edgeToEdgeEnabled": true
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "5e1a5cc5-15a3-4092-a6b9-1d7942be4f84"
+        "projectId": "YOUR_NEW_PROJECT_ID_HERE"
       }
     }
   }
