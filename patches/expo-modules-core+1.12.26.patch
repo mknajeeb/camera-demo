@@ -1,0 +1,21 @@
+diff --git a/node_modules/expo-modules-core/.DS_Store b/node_modules/expo-modules-core/.DS_Store
+new file mode 100644
+index 0000000..9e19368
+Binary files /dev/null and b/node_modules/expo-modules-core/.DS_Store differ
+diff --git a/node_modules/expo-modules-core/common/.DS_Store b/node_modules/expo-modules-core/common/.DS_Store
+new file mode 100644
+index 0000000..1b42fda
+Binary files /dev/null and b/node_modules/expo-modules-core/common/.DS_Store differ
+diff --git a/node_modules/expo-modules-core/common/cpp/fabric/ExpoViewProps.cpp b/node_modules/expo-modules-core/common/cpp/fabric/ExpoViewProps.cpp
+index ae99fd9..234ed62 100644
+--- a/node_modules/expo-modules-core/common/cpp/fabric/ExpoViewProps.cpp
++++ b/node_modules/expo-modules-core/common/cpp/fabric/ExpoViewProps.cpp
+@@ -17,7 +17,7 @@ std::unordered_map<std::string, folly::dynamic> propsMapFromProps(const ExpoView
+ 
+   // Iterate over values in the raw props object.
+   // Note that it contains only updated props.
+-  rawProps.iterateOverValues([&propsMap](react::RawPropsPropNameHash hash, const char *name, const react::RawValue &value) {
++    rawProps.forEach([&propsMap](react::RawPropsPropNameHash hash, const char *name, const react::RawValue &value) {
+     std::string propName(name);
+     propsMap[propName] = (folly::dynamic)value;
+   });
